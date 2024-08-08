@@ -1,0 +1,385 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.screen {
+    height: 100vh;
+    width: 100%;
+    background: #34495e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imp-details {
+    height: 500px;
+    width: 400px;
+    background: #22313f;
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px #8dc6ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.imp-details h1 {
+    color: white;
+}
+
+.imp-details-inputs {
+    height: 45px;
+    width: 270px;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: rgb(27, 91, 144);
+    border: none;
+}
+
+.imp-details-inputs::placeholder {
+    text-align: center;
+    text-decoration: solid;
+    font-size: 20px;
+    color: black;
+}
+
+.imp-details-inputs:hover {
+    background-color: rgb(27, 91, 144);
+    color: white;
+    box-shadow: 1px 1px 10px white;
+
+}
+
+.imp-details-inputs:focus {
+    outline: none;
+    border: 2px solid rgb(33, 126, 219);
+
+}
+
+#imp-details-btn {
+    height: 45px;
+    width: 150px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(16, 131, 225);
+
+}
+
+#imp-details-btn:hover {
+    background-color: rgb(27, 91, 144);
+    color: white;
+    box-shadow: 1px 1px 10px white;
+}
+
+.players-name-div {
+    height: 800px;
+    width: 700px;
+    background: #22313f;
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px #8dc6ff;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: none;
+
+}
+
+#team-a-name,
+#team-b-name {
+    height: 650px;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-bottom: 100px;
+}
+
+#team-a-name h1 {
+    color: red;
+}
+
+#team-b-name h1 {
+    color: rgb(69, 128, 211);
+}
+
+.player-name {
+    height: 30PX;
+    width: 200PX;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: rgb(27, 91, 144);
+    border: none;
+    color: white;
+}
+
+#vs {
+    font-size: 30px;
+}
+
+.player-name:focus {
+    outline: none;
+    border: 2px solid rgb(46, 116, 221);
+}
+
+.player-name::placeholder {
+    text-align: center;
+    color: white;
+}
+
+.player-name-btn-div {
+    position: absolute;
+    bottom: 50px;
+    display: none;
+}
+
+#btn-for-player-name {
+    height: 60px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(16, 131, 225);
+}
+
+#btn-for-player-name:hover {
+    background-color: rgb(27, 91, 144);
+    color: white;
+    box-shadow: 1px 1px 10px white;
+}
+
+#nextbtn ,  #previousbtn {
+    font-size: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+#nextbtn {
+    display: none;
+}
+
+.next button:hover,
+.previous button:hover {
+    box-shadow: 1px 1px 30px white;
+
+}
+
+#previousbtn {
+    display: none;
+}
+.livescore{
+    height: 100vh;
+    width: 100%;
+    background-color: #30343F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    display: none;
+}
+.score-card{
+    height: 60vh;
+    width: 50%;
+    background-color: #E4D9FF;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.basic-match-live-details{
+    height: 250px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.batting-player{
+    height: 80px;
+    width: 80%;
+    color: #1E2749;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.batting-player1{
+    color: #1E2749;
+    font-size: 200%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #1E2749;
+    border-bottom: none;
+}
+.batting-player2{
+    color: #1E2749;
+    font-size: 200%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #1E2749;
+
+}
+.plar-1{
+    
+    margin-left:8% ;
+}
+.over-details{
+    height: 100px;
+    width: 90%;
+    margin: 10px;
+    color: #1E2749;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bowler-name{
+    color: #1E2749;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 150%;
+}
+.ball-details{
+    display: flex;
+    justify-content: center;
+}
+.run-over{
+    height: 100px;
+    width: 90%;
+    color: #1E2749;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.over-current{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E2749;
+    font-size: 300%;
+}
+.run-wicket{
+    font-size: 300%;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E2749;
+}
+.ball{
+    height: 100%;
+    width: 10%;
+}
+
+.run-btn{
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    box-shadow: 1px 1px 10px black;
+}
+.run-btn:hover{
+    
+    box-shadow: 7px 7px 150px black;
+}
+.live-entry{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.run{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+.extra-run{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+.team-a-name{
+    height: 80vh;
+    width: 20%;
+    background-color: #FAFAFF;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 10px;
+    overflow:hidden ;
+}
+.team-b-name{
+    height: 80vh;
+    width: 20%;
+    background-color: #FAFAFF;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 10px;
+}
+.liveplayer{
+    background-color: transparent;
+    border: 1px dotted ;
+    height: 7%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.no_ball_pop_up_screen{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    display: none;
+}
+.btn_for_no_ball{
+    height: 600px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+}
+.btn_for_no_ball button{
+    height: 75px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    box-shadow: 10px 10px 50px black;
+    
+}

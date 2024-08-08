@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.screen{
+    height: 100vh;
+    width: 100%;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-image: url("loginbg.webp");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+
+}
+.container{
+    height: 450px;
+    width: 350px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    
+    
+}
+.input{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h1{
+    font-size: 36px;
+}
+
+.input-user{
+    
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 25px;
+    border: none;
+}
+.input-user:focus{
+    outline: none;
+    border: 2px solid rgb(30, 119, 208);
+}
+.input-user::placeholder{
+    text-align: left;
+    padding-left: 10px;
+}
+.btn{
+    height: 35px;
+    width: 150px;
+    border-radius: 15px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover{
+    background-color: rgb(96, 157, 207);
+    color: white;
+}
+.enter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    
+}

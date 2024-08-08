@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket score</title>
+    <link rel="stylesheet" href="cricketscore.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="previous">
+            <button id="previousbtn">🡸</button>
+        </div>
+        <div class="imp-details">
+            <h1>Enter Details</h1>
+            <div>
+                <input type="number" placeholder="TOTAL OVER" id="TOTALover" class="imp-details-inputs"
+                    autocomplete="off" required>
+            </div>
+            <div>
+                <input type="text" placeholder="TEAM A NAME" id="a-leader" class="imp-details-inputs" autocomplete="off"
+                    required>
+            </div>
+            <div>
+                <input type="text" placeholder="TEAM B NAME" id="b-leader" class="imp-details-inputs" autocomplete="off"
+                    required>
+            </div>
+            <div>
+                <button id="imp-details-btn">SUBMIT</button>
+            </div>
+        </div>
+        <div class="players-name-div">
+            <div id="team-a-name">
+                <H1 id="a-team-name">TEAM A</H1>
+                <div>
+                    <input type="text" class="player-name" id="playera1" placeholder="player-1" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera2" placeholder="player-2" autocomplete="off"
+                        required>
+                </div>
+
+                <div>
+                    <input type="text" class="player-name" id="playera3" placeholder="player-3" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera4" placeholder="player-4" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera5" placeholder="player-5" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera6" placeholder="player-6" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera7" placeholder="player-7" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera8" placeholder="player-8" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera9" placeholder="player-9" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera10" placeholder="player-10" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playera11" placeholder="player-11" autocomplete="off"
+                        required>
+                </div>
+            </div>
+            <div id="vs">VS</div>
+            <div id="team-b-name">
+                <H1 id="b-team-name">TEAM B</H1>
+                <div>
+                    <input type="text" class="player-name" id="playerb1" placeholder="player-1" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb2" placeholder="player-2" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb3" placeholder="player-3" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb4" placeholder="player-4" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb5" placeholder="player-5" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb6" placeholder="player-6" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb7" placeholder="player-7" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb8" placeholder="player-8" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb9" placeholder="player-9" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb10" placeholder="player-10" autocomplete="off"
+                        required>
+                </div>
+                <div>
+                    <input type="text" class="player-name" id="playerb11" placeholder="player-11" autocomplete="off"
+                        required>
+                </div>
+            </div>
+        </div>
+
+        <div class="next">
+            <button id="nextbtn">🡺</button>
+        </div>
+        <div class="player-name-btn-div">
+            <button id="btn-for-player-name">ENTER</button>
+        </div>
+
+    </div>
+    <div class="livescore">
+        <div class="team-a-name">
+            <div class="player-a1  liveplayer">player-1</div>
+            <div class="player-a2  liveplayer">player-2</div>
+            <div class="player-a3  liveplayer">player-3</div>
+            <div class="player-a4  liveplayer">player-4</div>
+            <div class="player-a5  liveplayer">player-5</div>
+            <div class="player-a6  liveplayer">player-6</div>
+            <div class="player-a7  liveplayer">player-7</div>
+            <div class="player-a8  liveplayer">player-8</div>
+            <div class="player-a9  liveplayer">player-9</div>
+            <div class="player-a10  liveplayer">player-10</div>
+            <div class="player-a11  liveplayer">player-11</div>
+        </div>
+        <div class="score-card">
+            <div class="run-over">
+                <div class="run-wicket"><p id="run">00</p>-<p id="wicket">0</p></div>
+                <div class="over-current"><p id="over-total">0</p>.<p id="ball-this-over">0</p></div>
+            </div>
+            <div class="live-entry">
+                <div class="run">
+                    <button class="zero run-btn"><img src="icons8-circled-0-50.png" alt=""></button>
+                    <button class="one run-btn"><img src="icons8-circled-1-50.png" alt=""></button>
+                    <button class="two run-btn"><img src="icons8-circled-2-50.png" alt=""></button>
+                    <button class="three run-btn"><img src="icons8-circled-3-50.png" alt=""></button>
+                    <button class="four run-btn"><img src="icons8-circled-4-48.png" alt=""></button>
+                    <button class="six run-btn"><img src="icons8-circled-6-48.png" alt=""></button>
+                </div>
+                <div class="extra-run">
+                    <button class="out run-btn">out</button>
+                    <button class="no-ball run-btn">NB</button>
+                    <button class="wide run-btn">wide</button>
+                </div>
+
+            <div class="basic-match-live-details">
+              
+                </div>
+                <div class="batting-player">
+                    <div class="batting-player1">
+                        <p class="plar-1">player-1 </p>
+                        <p>00(00)</p>
+                    </div>
+                    <div class="batting-player2">
+                        <p class="plar-1">player-2 </p>
+                        <p>00(00)
+                    </div>
+                </div>
+                <div class="over-details">
+                    <div class="bowler-name">
+                        <p>bowler-name </p>
+                        <p>0-00 (0.0)</p>
+                    </div>
+                    <div class="ball-details"><img src="icons8-circle-50.png" class="ball-1 ball" alt="dot ball">
+                        <img src="icons8-circle-50.png" class="ball-2 ball" alt="dot ball">
+                        <img src="icons8-circle-50.png" class="ball-3 ball" alt="dot ball">
+                        <img src="icons8-circle-50.png" class="ball-4 ball" alt="dot ball">
+                        <img src="icons8-circle-50.png" class="ball-5 ball" alt="dot ball">
+                        <img src="icons8-circle-50.png" class="ball-6 ball" alt="dot ball">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="team-b-name">
+            <div class="player-b1  liveplayer">player-1</div>
+            <div class="player-b2  liveplayer">player-2</div>
+            <div class="player-b3  liveplayer">player-3</div>
+            <div class="player-b4  liveplayer">player-4</div>
+            <div class="player-b5  liveplayer">player-5</div>
+            <div class="player-b6  liveplayer">player-6</div>
+            <div class="player-b7  liveplayer">player-7</div>
+            <div class="player-b8  liveplayer">player-8</div>
+            <div class="player-b9  liveplayer">player-9</div>
+            <div class="player-b10  liveplayer">player-10</div>
+            <div class="player-b11  liveplayer">player-11</div>
+        </div>
+    </div>
+    <div class="no_ball_pop_up_screen">
+        <div class="btn_for_no_ball">
+            <h1>what is on No ball</h1>
+            <div>
+            <button class="zero_no run-btn"><img src="icons8-circled-0-50.png" alt=""></button>
+            <button class="one_no run-btn"><img src="icons8-circled-1-50.png" alt=""></button>
+            <button class="two_no run-btn"><img src="icons8-circled-2-50.png" alt=""></button>
+            <button class="three_no run-btn"><img src="icons8-circled-3-50.png" alt=""></button>
+            <button class="four_no run-btn"><img src="icons8-circled-4-48.png" alt=""></button>
+            <button class="six_no run-btn"><img src="icons8-circled-6-48.png" alt=""></button>
+            <button class="out_no run-btn">run out</button>
+        </div>
+        </div>
+    </div>
+    <script src="cricketscore.js"></script>
+</body>
+
+</html>
