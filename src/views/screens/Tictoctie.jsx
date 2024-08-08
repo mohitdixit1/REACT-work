@@ -16,7 +16,12 @@ const Tictoctie = () => {
       
     }, [count])
     
-   // add 
+    if (0==count%2) {
+      console.log("even")
+      
+    } else {
+      console.log("odd")
+    }
     
   
   return (
