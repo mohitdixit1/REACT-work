@@ -33,6 +33,7 @@ const Login = () => {
       <div className="child-div">
         <h2>Login</h2>
           <div>
+
             {" "}
             <label htmlFor="username">Username</label>
             <input
@@ -55,6 +56,7 @@ const Login = () => {
               placeholder="password"
               value={data.pwd}
               onChange={dataHandler}
+              
             />
           </div>
           <div>
