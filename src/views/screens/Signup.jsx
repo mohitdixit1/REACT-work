@@ -12,13 +12,16 @@ const SignupScreen = () => {
 
   const nav = useNavigate();
 
+
   const loginNavigator = () => {
     nav("/login");
+
   };
   const dataHandler = (a) => {
     setsignupdata({
       ...signupdata,
       [a.target.name]: a.target.value,
+
     });
   };
   const dataFetcher = () => {
@@ -26,6 +29,7 @@ const SignupScreen = () => {
   };
   useEffect(() => {
     console.log(signupdata);
+    
   }, [signupdata]);
 
   return (
