@@ -12,30 +12,41 @@ const SignupScreen = () => {
 
   const nav = useNavigate();
 
-
   const loginNavigator = () => {
     nav("/login");
-
   };
   const dataHandler = (a) => {
     setsignupdata({
       ...signupdata,
       [a.target.name]: a.target.value,
-
     });
   };
   const dataFetcher = () => {
     console.log(signupdata);
   };
-  useEffect(() => {
-    console.log(signupdata);
-    
-  }, [signupdata]);
+  const home_navigator = ()=>{
+    nav("/Home");
+  };
+
 
   return (
     <div className="container">
       <div className="child-div">
-        <h1>Sign up</h1>
+        <h6>
+          <button className="homebtn"
+          onClick={home_navigator}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+            </svg>
+          </button>
+          Sign up
+        </h6>
         <div>
           <input
             type="text"
@@ -52,14 +63,14 @@ const SignupScreen = () => {
           />
 
           <input
-            type="pasword"
+            type="password"
             onChange={dataHandler}
             name="password"
             placeholder="set password"
           />
         </div>
 
-        <button>Signup</button>
+        <button onClick={dataFetcher}>Signup</button>
         <p>
           Already a user?{" "}
           <span style={{ cursor: "pointer" }} onClick={loginNavigator}>
